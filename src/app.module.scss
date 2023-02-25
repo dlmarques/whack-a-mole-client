@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: url("./assets/WAM_bg.jpg") no-repeat 0 0 fixed;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  cursor: url("./assets/WAM_Hammer.png") 2 2, pointer;
+}
