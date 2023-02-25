@@ -3,6 +3,7 @@ import styles from "./app.module.scss";
 import Holes from "./components/Holes";
 import ScoreDisplay from "./components/ScoreDisplay";
 import StartGame from "./components/StartGame";
+import Timer from "./components/Timer";
 
 function App() {
   const isStarted = useSelector((state: any) => state.game.gameStarted);
@@ -15,13 +16,16 @@ function App() {
           <StartGame />
         </div>
       )}
-      {isStarted && (
+      {isStarted && !gameOver && (
         <div className={styles["in-game"]}>
-          <ScoreDisplay />
+          <div className={styles.top}>
+            <ScoreDisplay />
+            <Timer />
+          </div>
           <Holes />
         </div>
       )}
-      {gameOver && <div className={styles.leaderboard}></div>}
+      {gameOver && <div className={styles.leaderboard}>end</div>}
     </div>
   );
 }
