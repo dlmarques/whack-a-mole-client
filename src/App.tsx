@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import styles from "./app.module.scss";
 import Holes from "./components/Holes";
+import Leaderboard from "./components/Leaderboard";
 import ScoreDisplay from "./components/ScoreDisplay";
 import StartGame from "./components/StartGame";
 import Timer from "./components/Timer";
@@ -25,7 +26,11 @@ function App() {
           <Holes />
         </div>
       )}
-      {gameOver && <div className={styles.leaderboard}>end</div>}
+      {gameOver && (
+        <div className={styles.leaderboard}>
+          <Leaderboard />
+        </div>
+      )}
     </div>
   );
 }

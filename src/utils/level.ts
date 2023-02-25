@@ -12,8 +12,14 @@ export const level = (score: number) => {
     case score >= 20 && score < 25:
       return 1250;
       break;
-    case score >= 20:
+    case score >= 20 && score < 30:
       return 1000;
+      break;
+    case score >= 30 && score < 40:
+      return 750;
+      break;
+    case score >= 40 && score < 50:
+      return 500;
       break;
     default:
       break;

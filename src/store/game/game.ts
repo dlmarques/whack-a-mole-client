@@ -19,6 +19,11 @@ const gameSlice = createSlice({
     endGame(state) {
       state.gameOver = true;
     },
+    restartGame(state) {
+      state.gameStarted = true;
+      state.gameOver = false;
+      state.score = 0;
+    },
   },
 });
 
