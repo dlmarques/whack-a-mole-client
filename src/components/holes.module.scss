@@ -1,0 +1,14 @@
+.holes {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  grid-row-gap: 50px;
+  justify-content: center;
+
+  .hole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+  }
+}

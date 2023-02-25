@@ -9,5 +9,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
-  cursor: url("./assets/WAM_Hammer.png") 2 2, pointer;
+  font-family: "Electrolize", sans-serif;
+  .start {
+    width: 100%;
+    height: 100%;
+  }
+  .in-game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
