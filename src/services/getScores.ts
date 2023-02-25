@@ -3,7 +3,7 @@ import { Score } from "../models/score";
 
 export const getScores = async (userScore: Score) => {
   return await axios
-    .post("http://localhost:3001/api/game/getScores", {
+    .post(`${import.meta.env.VITE_API_URL}game/getScores`, {
       userScore: userScore,
     })
     .then((res) => {
