@@ -6,9 +6,15 @@ import styles from "./start-game.module.scss";
 const StartGame = () => {
   const dispatch = useDispatch();
   const [username, setUsername] = useState<string>();
+  const [error, setError] = useState<boolean>();
 
   const createSession = () => {
-    if (username) dispatch(gameActions.createSession(username));
+    if (username) {
+      setError(false);
+      dispatch(gameActions.createSession(username));
+    } else {
+      setError(true);
+    }
   };
 
   return (
@@ -20,7 +26,11 @@ const StartGame = () => {
           onChange={(e) => setUsername(e.target.value)}
           required
           role="username-input"
+          className={error ? styles["input-error"] : styles.input}
         />
+        {error && (
+          <span className={styles.alert}>Please insert an username</span>
+        )}
         <button role="start-game" onClick={() => createSession()}>
           Start game
         </button>

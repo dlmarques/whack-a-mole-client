@@ -9,15 +9,32 @@
     display: flex;
     flex-direction: column;
     cursor: default;
-    input {
+    .input {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid black;
       height: 30px;
       font-size: 1.2rem;
+      font-family: "Electrolize", sans-serif;
       &:focus-visible {
         outline: none;
       }
+    }
+    .input-error {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgb(255, 0, 0);
+      height: 30px;
+      font-size: 1.2rem;
+      font-family: "Electrolize", sans-serif;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    .alert {
+      margin-top: 5px;
+      color: rgb(255, 0, 0);
+      font-weight: bold;
     }
 
     button {
