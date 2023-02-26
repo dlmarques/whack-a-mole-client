@@ -7,7 +7,8 @@
     "dev:local": "env-cmd -f ./environments/.local.env vite",
     "dev:prod": "env-cmd -f ./environments/.prod.env vite",
     "test": "jest",
-    "build": "tsc && vite build",
+    "build:local": "env-cmd -f ./environments/.local.env tsc && vite build",
+    "build:dev": "env-cmd -f ./environments/.prod.env tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
