@@ -40,6 +40,7 @@ const Holes = () => {
             <img
               src={currentMole === p ? mole : hole}
               alt="hole"
+              draggable="false"
               onClick={() => (currentMole === p ? attackMole() : null)}
             />
           </div>
