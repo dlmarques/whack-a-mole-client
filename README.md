@@ -4,6 +4,13 @@ A whack-a-mole web game, built with React, Redux, TypeScript and SASS
 
 ## Project Screen Shots
 
+![_1](https://user-images.githubusercontent.com/88408262/221439018-c6b16066-c6b7-487b-b3f3-f602f1a18f0b.png)
+
+![_2](https://user-images.githubusercontent.com/88408262/221439024-f7861b7b-8d40-4cb0-a338-bdcd2d40da5a.png)
+
+![_3](https://user-images.githubusercontent.com/88408262/221439028-5d4ccd7c-977b-4adb-a1e8-c7f98e595381.png)
+
+
 ## Installation and Setup Instructions
 
 #### Example:
