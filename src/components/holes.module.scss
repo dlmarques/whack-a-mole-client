@@ -10,5 +10,11 @@
     justify-content: center;
     align-items: center;
     min-height: 150px;
+
+    img {
+      &:active {
+        cursor: url("../assets/WAM_Hammer_Active.png") 25 50, pointer;
+      }
+    }
   }
 }
