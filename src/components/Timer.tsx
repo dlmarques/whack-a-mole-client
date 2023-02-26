@@ -5,7 +5,7 @@ import styles from "./timer.module.scss";
 
 const Timer = () => {
   const dispatch = useDispatch();
-  const [minutes, setMinutes] = useState(5);
+  const [minutes, setMinutes] = useState(2);
   const [seconds, setSeconds] = useState(0);
   useEffect(() => {
     let myInterval = setInterval(() => {
@@ -29,7 +29,7 @@ const Timer = () => {
 
   return (
     <div className={styles.timer}>
-      <h1>
+      <h1 role="timer">
         {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
       </h1>
     </div>

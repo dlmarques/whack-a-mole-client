@@ -29,7 +29,7 @@ const Leaderboard = () => {
           })
           .map((score) => {
             return (
-              <div className={styles.score}>
+              <div className={styles.score} role="record">
                 <h5>{score.name}</h5>
                 <h5>{score.score}</h5>
               </div>

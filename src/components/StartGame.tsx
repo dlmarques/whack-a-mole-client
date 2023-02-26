@@ -18,8 +18,12 @@ const StartGame = () => {
           type="text"
           placeholder="Username"
           onChange={(e) => setUsername(e.target.value)}
+          required
+          role="username-input"
         />
-        <button onClick={() => createSession()}>Start game</button>
+        <button role="start-game" onClick={() => createSession()}>
+          Start game
+        </button>
       </div>
     </div>
   );

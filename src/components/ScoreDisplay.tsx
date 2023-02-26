@@ -6,7 +6,7 @@ const ScoreDisplay = () => {
   const score = useSelector((state: any) => state.game.score);
   return (
     <div className={styles["score-display"]}>
-      <h1>Score: {score}</h1>
+      <h1 role="score">Score: {score}</h1>
     </div>
   );
 };

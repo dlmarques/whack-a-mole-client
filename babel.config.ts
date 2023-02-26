@@ -3,5 +3,12 @@ module.exports = {
     "@babel/preset-env",
     ["@babel/preset-react", { runtime: "automatic" }],
     "@babel/preset-typescript",
+    [
+      "babel-preset-vite",
+      {
+        env: true,
+        glob: false,
+      },
+    ],
   ],
 };

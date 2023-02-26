@@ -46,6 +46,7 @@ const Holes = () => {
               src={currentMole === p ? mole : hole}
               alt="hole"
               draggable="false"
+              role={currentMole === p ? "mole" : ""}
               onClick={() => (currentMole === p ? attackMole() : null)}
             />
           </div>
