@@ -5,7 +5,7 @@ import styles from "./timer.module.scss";
 
 const Timer = () => {
   const dispatch = useDispatch();
-  const [minutes, setMinutes] = useState(1);
+  const [minutes, setMinutes] = useState(2);
   const [seconds, setSeconds] = useState(0);
   useEffect(() => {
     let myInterval = setInterval(() => {
