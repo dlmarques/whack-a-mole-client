@@ -20,17 +20,22 @@ const Holes = () => {
   const attackMole = () => {
     setCurrentMole(0);
     dispatch(gameActions.incrementScore());
+    popUpMole();
   };
 
   useEffect(() => {
     const auxInterval = level(score);
     const interval = setInterval(() => {
-      const auxNumber = randomGenerator();
-      setCurrentMole(auxNumber);
+      popUpMole();
     }, auxInterval);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [score]);
+
+  const popUpMole = () => {
+    const auxNumber = randomGenerator();
+    setCurrentMole(auxNumber);
+  };
 
   return (
     <div className={styles.holes}>
